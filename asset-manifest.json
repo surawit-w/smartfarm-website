@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/surawit-w/smartfarm-website.git/static/css/main.d1b05096.chunk.css",
+    "main.js": "/surawit-w/smartfarm-website.git/static/js/main.abf98211.chunk.js",
+    "main.js.map": "/surawit-w/smartfarm-website.git/static/js/main.abf98211.chunk.js.map",
+    "runtime-main.js": "/surawit-w/smartfarm-website.git/static/js/runtime-main.280d9045.js",
+    "runtime-main.js.map": "/surawit-w/smartfarm-website.git/static/js/runtime-main.280d9045.js.map",
+    "static/js/2.78313752.chunk.js": "/surawit-w/smartfarm-website.git/static/js/2.78313752.chunk.js",
+    "static/js/2.78313752.chunk.js.map": "/surawit-w/smartfarm-website.git/static/js/2.78313752.chunk.js.map",
+    "index.html": "/surawit-w/smartfarm-website.git/index.html",
+    "precache-manifest.300ceaa2403f6d37f97ac1447ce7a627.js": "/surawit-w/smartfarm-website.git/precache-manifest.300ceaa2403f6d37f97ac1447ce7a627.js",
+    "service-worker.js": "/surawit-w/smartfarm-website.git/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/surawit-w/smartfarm-website.git/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.78313752.chunk.js.LICENSE": "/surawit-w/smartfarm-website.git/static/js/2.78313752.chunk.js.LICENSE",
+    "static/media/logo.svg": "/surawit-w/smartfarm-website.git/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.280d9045.js",
+    "static/js/2.78313752.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.abf98211.chunk.js"
+  ]
+}
