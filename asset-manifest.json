@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/smartfarm-website/static/css/main.d1b05096.chunk.css",
-    "main.js": "/smartfarm-website/static/js/main.4edfdee9.chunk.js",
-    "main.js.map": "/smartfarm-website/static/js/main.4edfdee9.chunk.js.map",
+    "main.css": "/smartfarm-website/static/css/main.f13e4301.chunk.css",
+    "main.js": "/smartfarm-website/static/js/main.b39b5180.chunk.js",
+    "main.js.map": "/smartfarm-website/static/js/main.b39b5180.chunk.js.map",
     "runtime-main.js": "/smartfarm-website/static/js/runtime-main.e5dbc283.js",
     "runtime-main.js.map": "/smartfarm-website/static/js/runtime-main.e5dbc283.js.map",
-    "static/js/2.78313752.chunk.js": "/smartfarm-website/static/js/2.78313752.chunk.js",
-    "static/js/2.78313752.chunk.js.map": "/smartfarm-website/static/js/2.78313752.chunk.js.map",
+    "static/js/2.0476a9ab.chunk.js": "/smartfarm-website/static/js/2.0476a9ab.chunk.js",
+    "static/js/2.0476a9ab.chunk.js.map": "/smartfarm-website/static/js/2.0476a9ab.chunk.js.map",
     "index.html": "/smartfarm-website/index.html",
-    "precache-manifest.e095433b1553c2ebe0058d7194ff5cff.js": "/smartfarm-website/precache-manifest.e095433b1553c2ebe0058d7194ff5cff.js",
+    "precache-manifest.f3477bd12daafc459b21d632351eed6f.js": "/smartfarm-website/precache-manifest.f3477bd12daafc459b21d632351eed6f.js",
     "service-worker.js": "/smartfarm-website/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/smartfarm-website/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.78313752.chunk.js.LICENSE": "/smartfarm-website/static/js/2.78313752.chunk.js.LICENSE",
+    "static/css/main.f13e4301.chunk.css.map": "/smartfarm-website/static/css/main.f13e4301.chunk.css.map",
+    "static/js/2.0476a9ab.chunk.js.LICENSE": "/smartfarm-website/static/js/2.0476a9ab.chunk.js.LICENSE",
+    "static/media/App.css": "/smartfarm-website/static/media/printable4u_regular_ver_1.00-webfont.e4cc6cc2.woff",
     "static/media/logo.svg": "/smartfarm-website/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e5dbc283.js",
-    "static/js/2.78313752.chunk.js",
-    "static/css/main.d1b05096.chunk.css",
-    "static/js/main.4edfdee9.chunk.js"
+    "static/js/2.0476a9ab.chunk.js",
+    "static/css/main.f13e4301.chunk.css",
+    "static/js/main.b39b5180.chunk.js"
   ]
 }
