@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4f39d20d37602fc1e4666d6b4ec99847",
+    "revision": "6a7fb6b16b2125c14c792a6e58e7429e",
     "url": "/smartfarm-website/index.html"
   },
   {
