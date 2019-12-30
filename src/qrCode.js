@@ -13,12 +13,17 @@ export default class qrCode extends Component {
     }
     liff.init({ liffId: "1610155283-WqRpOKwB" }, () => {});
   }
+
+  componentDidMount() {
+    document.title = "QRScan";
+  }
+
   render() {
     return (
       <div>
         <p id="scanCode"></p>
         <p>
-          <button id="btnScanCode" onclick="scancode()">
+          <button id="btnScanCode" onclick="scanCode()">
             Scan Code
           </button>
         </p>

@@ -30,7 +30,7 @@ body {
 }
 .line-id {
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   background: #dcdfe1;
   font-family: "printable4uregular";
 }
@@ -39,19 +39,37 @@ body {
   padding: 10px;
   font-family: "printable4uregular";
   width: 80%;
+  font-size: 1.25rem;
 }
 .farmer-phone {
   text-align: center;
   padding: 10px;
   font-family: "printable4uregular";
   width: 80%;
+  font-size: 1.25rem;
 }
 .button {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 1rem;
   padding: 15px;
   background: #d68c45;
   color: #000000;
   font-family: "printable4uregular";
   border-radius: 10px;
+  font-size: 1.25rem;
+}
+.form-label {
+  font-size: 1.5rem;
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+}
+.Main {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }

@@ -1,18 +1,16 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { async } from "q";
 import { GET, POST } from "./service";
 
 const liff = window.liff;
 
-function SignIn(props) {
-  const { classes } = props;
+// function SignIn(props) {
+//   const { classes } = props;
 
-  // const [name] = useState("");
-  // const [tel] = useState("");
-  // const [id] = useState("");
-}
+//   const [name] = useState("");
+//   const [tel] = useState("");
+//   const [id] = useState("");
+// }
 
 export default class App extends Component {
   initialize() {
@@ -72,40 +70,40 @@ export default class App extends Component {
     const { line_id, loading, line_pic, name, tel } = this.state;
     return (
       <div class="App font">
-        <h1>ลงทะเบียนเกษตรกรใหม่</h1>
-        <div>
+        <h1>ลงทะเบียนผู้ใช้ใหม่</h1>
+        {/* <div>
           <img width="40%" src={line_pic}></img>
-        </div>
+        </div> */}
         <input
           class="line-id"
-          value={"Line ID: " + line_id}
-          name={"Line ID: " + line_id}
+          value={"Line UID: " + line_id}
+          name={"Line UID: " + line_id}
           disabled
         />
-
-        <p>ชื่อเกษตรกร</p>
+        <p className="form-label">ชื่อเกษตรกร</p>
         <input
           required
           class="farmer-name"
-          placeholder="ชื่อ-นามสกุล"
+          placeholder="กรอกชื่อที่นี่"
           type="text"
           name="name"
           value={name}
           onChange={this.changeHandler}
         />
-        <p>เบอร์โทรศัพท์</p>
+        <p className="form-label">เบอร์โทรศัพท์</p>
         <input
           required
           class="farmer-phone"
-          placeholder="กรอกเบอร์โทรศัพท์ที่นี่ค่ะ"
+          placeholder="กรอกเบอร์โทรศัพท์ที่นี่"
           maxLength="10"
           type="tel"
           name="tel"
           value={tel}
           onChange={this.changeHandler}
         />
+        <br></br>
         <button
-          class="button"
+          className="button"
           type="submit"
           id="submitBtn"
           onClick={this.sendInfo}
