@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/smartfarm-website/static/css/main.e1b75d77.chunk.css",
-    "main.js": "/smartfarm-website/static/js/main.61f00cce.chunk.js",
-    "main.js.map": "/smartfarm-website/static/js/main.61f00cce.chunk.js.map",
+    "main.js": "/smartfarm-website/static/js/main.5fb71504.chunk.js",
+    "main.js.map": "/smartfarm-website/static/js/main.5fb71504.chunk.js.map",
     "runtime-main.js": "/smartfarm-website/static/js/runtime-main.e5dbc283.js",
     "runtime-main.js.map": "/smartfarm-website/static/js/runtime-main.e5dbc283.js.map",
-    "static/js/2.293cd94a.chunk.js": "/smartfarm-website/static/js/2.293cd94a.chunk.js",
-    "static/js/2.293cd94a.chunk.js.map": "/smartfarm-website/static/js/2.293cd94a.chunk.js.map",
+    "static/js/2.13efe6ee.chunk.js": "/smartfarm-website/static/js/2.13efe6ee.chunk.js",
+    "static/js/2.13efe6ee.chunk.js.map": "/smartfarm-website/static/js/2.13efe6ee.chunk.js.map",
     "index.html": "/smartfarm-website/index.html",
-    "precache-manifest.c1702017d717588996dff32763cd7415.js": "/smartfarm-website/precache-manifest.c1702017d717588996dff32763cd7415.js",
+    "precache-manifest.3d7fee423b1253400843e63518023df2.js": "/smartfarm-website/precache-manifest.3d7fee423b1253400843e63518023df2.js",
     "service-worker.js": "/smartfarm-website/service-worker.js",
     "static/css/main.e1b75d77.chunk.css.map": "/smartfarm-website/static/css/main.e1b75d77.chunk.css.map",
-    "static/js/2.293cd94a.chunk.js.LICENSE": "/smartfarm-website/static/js/2.293cd94a.chunk.js.LICENSE",
+    "static/js/2.13efe6ee.chunk.js.LICENSE": "/smartfarm-website/static/js/2.13efe6ee.chunk.js.LICENSE",
     "static/media/App.css": "/smartfarm-website/static/media/printable4u_regular_ver_1.00-webfont.e4cc6cc2.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.e5dbc283.js",
-    "static/js/2.293cd94a.chunk.js",
+    "static/js/2.13efe6ee.chunk.js",
     "static/css/main.e1b75d77.chunk.css",
-    "static/js/main.61f00cce.chunk.js"
+    "static/js/main.5fb71504.chunk.js"
   ]
 }
