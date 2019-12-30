@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "39f76efc1a773c5e9b7c4160bcecff0b",
+    "revision": "43ba4610a7cc75b3ea2994dc38c7d79c",
     "url": "/smartfarm-website/index.html"
   },
   {
-    "revision": "1debddc63405191cfa98",
-    "url": "/smartfarm-website/static/css/main.a43c0a78.chunk.css"
+    "revision": "cedfebe61970cc9248b9",
+    "url": "/smartfarm-website/static/css/main.f13e4301.chunk.css"
   },
   {
-    "revision": "6bcf13ace9b8350e0a4b",
-    "url": "/smartfarm-website/static/js/2.f86bd85e.chunk.js"
+    "revision": "a5b422cb3a126c13f9db",
+    "url": "/smartfarm-website/static/js/2.0476a9ab.chunk.js"
   },
   {
     "revision": "69433a9981daf4d215299e560d627c72",
-    "url": "/smartfarm-website/static/js/2.f86bd85e.chunk.js.LICENSE"
+    "url": "/smartfarm-website/static/js/2.0476a9ab.chunk.js.LICENSE"
   },
   {
-    "revision": "1debddc63405191cfa98",
-    "url": "/smartfarm-website/static/js/main.77261a89.chunk.js"
+    "revision": "cedfebe61970cc9248b9",
+    "url": "/smartfarm-website/static/js/main.d28697e0.chunk.js"
   },
   {
     "revision": "b4d21ccea2dc41c232f5",
     "url": "/smartfarm-website/static/js/runtime-main.e5dbc283.js"
+  },
+  {
+    "revision": "cdb9e0661f2ea0b4cc6be60454057295",
+    "url": "/smartfarm-website/static/media/clouds-cornfield-farm-158827.cdb9e066.jpg"
   },
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",

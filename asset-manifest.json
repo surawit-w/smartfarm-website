@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/smartfarm-website/static/css/main.a43c0a78.chunk.css",
-    "main.js": "/smartfarm-website/static/js/main.77261a89.chunk.js",
-    "main.js.map": "/smartfarm-website/static/js/main.77261a89.chunk.js.map",
+    "main.css": "/smartfarm-website/static/css/main.f13e4301.chunk.css",
+    "main.js": "/smartfarm-website/static/js/main.d28697e0.chunk.js",
+    "main.js.map": "/smartfarm-website/static/js/main.d28697e0.chunk.js.map",
     "runtime-main.js": "/smartfarm-website/static/js/runtime-main.e5dbc283.js",
     "runtime-main.js.map": "/smartfarm-website/static/js/runtime-main.e5dbc283.js.map",
-    "static/js/2.f86bd85e.chunk.js": "/smartfarm-website/static/js/2.f86bd85e.chunk.js",
-    "static/js/2.f86bd85e.chunk.js.map": "/smartfarm-website/static/js/2.f86bd85e.chunk.js.map",
+    "static/js/2.0476a9ab.chunk.js": "/smartfarm-website/static/js/2.0476a9ab.chunk.js",
+    "static/js/2.0476a9ab.chunk.js.map": "/smartfarm-website/static/js/2.0476a9ab.chunk.js.map",
     "index.html": "/smartfarm-website/index.html",
-    "precache-manifest.014257a123b23b380a78110f343e943e.js": "/smartfarm-website/precache-manifest.014257a123b23b380a78110f343e943e.js",
+    "precache-manifest.29fd252de7b33d20c5fc9e1bd472d813.js": "/smartfarm-website/precache-manifest.29fd252de7b33d20c5fc9e1bd472d813.js",
     "service-worker.js": "/smartfarm-website/service-worker.js",
-    "static/css/main.a43c0a78.chunk.css.map": "/smartfarm-website/static/css/main.a43c0a78.chunk.css.map",
-    "static/js/2.f86bd85e.chunk.js.LICENSE": "/smartfarm-website/static/js/2.f86bd85e.chunk.js.LICENSE",
-    "static/media/logo.svg": "/smartfarm-website/static/media/logo.5d5d9eef.svg",
-    "static/media/App.css": "/smartfarm-website/static/media/printable4u_regular_ver_1.00-webfont.e4cc6cc2.woff"
+    "static/css/main.f13e4301.chunk.css.map": "/smartfarm-website/static/css/main.f13e4301.chunk.css.map",
+    "static/js/2.0476a9ab.chunk.js.LICENSE": "/smartfarm-website/static/js/2.0476a9ab.chunk.js.LICENSE",
+    "static/media/App.css": "/smartfarm-website/static/media/printable4u_regular_ver_1.00-webfont.e4cc6cc2.woff",
+    "static/media/logo.svg": "/smartfarm-website/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e5dbc283.js",
-    "static/js/2.f86bd85e.chunk.js",
-    "static/css/main.a43c0a78.chunk.css",
-    "static/js/main.77261a89.chunk.js"
+    "static/js/2.0476a9ab.chunk.js",
+    "static/css/main.f13e4301.chunk.css",
+    "static/js/main.d28697e0.chunk.js"
   ]
 }
