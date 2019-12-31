@@ -69,13 +69,13 @@ export default class App extends Component {
   render() {
     const { line_id, loading, line_pic, name, tel } = this.state;
     return (
-      <div class="App font">
+      <div className="App font">
         <h1>ลงทะเบียนผู้ใช้ใหม่</h1>
         {/* <div>
           <img width="40%" src={line_pic}></img>
         </div> */}
         <input
-          class="line-id"
+          className="line-id"
           value={"Line UID: " + line_id}
           name={"Line UID: " + line_id}
           disabled
@@ -83,7 +83,7 @@ export default class App extends Component {
         <p className="form-label">ชื่อเกษตรกร</p>
         <input
           required
-          class="farmer-name"
+          className="farmer-name"
           placeholder="กรอกชื่อที่นี่"
           type="text"
           name="name"
@@ -93,7 +93,7 @@ export default class App extends Component {
         <p className="form-label">เบอร์โทรศัพท์</p>
         <input
           required
-          class="farmer-phone"
+          className="farmer-phone"
           placeholder="กรอกเบอร์โทรศัพท์ที่นี่"
           maxLength="10"
           type="tel"
