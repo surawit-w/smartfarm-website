@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-// import App from './App';
-import Route from "./Route.js";
+import Route from "./route.js";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(<Route />, document.getElementById("root"));

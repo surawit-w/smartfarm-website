@@ -1,31 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
-import { GET, POST } from "./service";
+import axios from "axios";
 
 const liff = window.liff;
+const API = "https://line-smartfarm-api.herokuapp.com"
 
-// function SignIn(props) {
-//   const { classes } = props;
-
-//   const [name] = useState("");
-//   const [tel] = useState("");
-//   const [id] = useState("");
-// }
-
-export default class App extends Component {
-  initialize() {
-    console.log("Entering initialize state...");
-    liff.init({ liffId: "1610155283-WqRpOKwB" }, async () => {
-      let profile = await liff.getProfile();
-      this.setState({
-        line_id: profile.userId,
-        line_pic: profile.pictureUrl
-      });
-      console.log("Get UID completed going to register page...");
-      this.verifyUID();
-    });
-  }
-
+export default class register extends Component {
+  // state
   constructor(props) {
     super(props);
     this.state = {
@@ -39,31 +20,44 @@ export default class App extends Component {
     this.initialize = this.initialize.bind(this);
   }
 
+  // init state (use to get liff data)
+  initialize() {
+    console.log("Entering initialize state...");
+    liff.init({ liffId: "1610155283-WqRpOKwB" }, async () => {
+      let profile = await liff.getProfile();
+      this.setState({
+        line_id: profile.userId,
+        line_pic: profile.pictureUrl
+      });
+      console.log("Get UID completed going to register page...");
+      this.verifyUID();
+    });
+  }
+
   componentDidMount() {
     window.addEventListener("load", this.initialize);
     document.title = "Register";
   }
 
-  handleChange = async ({ target: { value, name } }) => {
-    await this.setState(
-      {
-        [name]: value
-      },
-      await console.log(this.state)
-    );
-  };
-
+  // use to check form change
   changeHandler = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  sendInfo = async () => {
-    let name = this.state.name;
-    let tel = this.state.tel;
-    let lineId = this.state.line_id;
-    let test = await POST("/sendInfo", { name, tel, lineId });
-    console.log(test);
-    alert(test.status);
+  // post a form data to DB
+  userPost = e => {
+    console.log("Connecting to an API...")
+    e.preventDefault();
+    this.setState({ loading: true });
+    axios.post(API + "/users", this.state).then(Response => {
+      console.log("Register Success!");
+
+      // delay before close
+      setTimeout(() => {
+        this.setState({ loading: false });
+        liff.closeWindow();
+      }, 2000);
+    });
   };
 
   render() {
@@ -71,15 +65,10 @@ export default class App extends Component {
     return (
       <div className="App font">
         <h1>ลงทะเบียนผู้ใช้ใหม่</h1>
-        {/* <div>
+        <div>
           <img width="40%" src={line_pic}></img>
-        </div> */}
-        <input
-          className="line-id"
-          value={"Line UID: " + line_id}
-          name={"Line UID: " + line_id}
-          disabled
-        />
+        </div>
+        {/* <input className="line-id" value={line_id} name={line_id} disabled /> */}
         <p className="form-label">ชื่อเกษตรกร</p>
         <input
           required
@@ -106,7 +95,7 @@ export default class App extends Component {
           className="button"
           type="submit"
           id="submitBtn"
-          onClick={this.sendInfo}
+          onClick={this.userPost}
         >
           ลงทะเบียน
         </button>
