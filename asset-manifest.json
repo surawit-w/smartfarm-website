@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/smartfarm-website/static/css/main.e1b75d77.chunk.css",
-    "main.js": "/smartfarm-website/static/js/main.1d86b3fa.chunk.js",
-    "main.js.map": "/smartfarm-website/static/js/main.1d86b3fa.chunk.js.map",
+    "main.js": "/smartfarm-website/static/js/main.5400d0b7.chunk.js",
+    "main.js.map": "/smartfarm-website/static/js/main.5400d0b7.chunk.js.map",
     "runtime-main.js": "/smartfarm-website/static/js/runtime-main.e5dbc283.js",
     "runtime-main.js.map": "/smartfarm-website/static/js/runtime-main.e5dbc283.js.map",
     "static/js/2.6b15c946.chunk.js": "/smartfarm-website/static/js/2.6b15c946.chunk.js",
     "static/js/2.6b15c946.chunk.js.map": "/smartfarm-website/static/js/2.6b15c946.chunk.js.map",
     "index.html": "/smartfarm-website/index.html",
-    "precache-manifest.e430f18b4073f29199889d6579871d9d.js": "/smartfarm-website/precache-manifest.e430f18b4073f29199889d6579871d9d.js",
+    "precache-manifest.e73b4006e277cc93386b033f46da284a.js": "/smartfarm-website/precache-manifest.e73b4006e277cc93386b033f46da284a.js",
     "service-worker.js": "/smartfarm-website/service-worker.js",
     "static/css/main.e1b75d77.chunk.css.map": "/smartfarm-website/static/css/main.e1b75d77.chunk.css.map",
     "static/js/2.6b15c946.chunk.js.LICENSE": "/smartfarm-website/static/js/2.6b15c946.chunk.js.LICENSE",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.e5dbc283.js",
     "static/js/2.6b15c946.chunk.js",
     "static/css/main.e1b75d77.chunk.css",
-    "static/js/main.1d86b3fa.chunk.js"
+    "static/js/main.5400d0b7.chunk.js"
   ]
 }
