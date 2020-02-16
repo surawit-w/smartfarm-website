@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Register from "./register";
-import QRscan from "./qrscan";
-import Main from "./main";
+import Register from "./pages/register";
+import QRscan from "./pages/qrscan";
+import Main from "./pages/main";
 
 export default class route extends Component {
   render() {

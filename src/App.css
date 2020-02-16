@@ -15,61 +15,53 @@
   font-weight: normal;
   font-style: normal;
 }
+
 body {
-  background-image: url("./pics/clouds-cornfield-farm-158827.jpg");
+  background-image: url("./images/bg.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
-.App {
-  text-align: center;
-}
-.font {
-  font-family: "printable4uregular";
-}
-.line-id {
-  text-align: center;
-  padding: 10px;
-  background: #dcdfe1;
-  font-family: "printable4uregular";
-}
-.farmer-name {
-  text-align: center;
-  padding: 10px;
-  font-family: "printable4uregular";
-  width: 80%;
-  font-size: 1.25rem;
-}
-.farmer-phone {
-  text-align: center;
-  padding: 10px;
-  font-family: "printable4uregular";
-  width: 80%;
-  font-size: 1.25rem;
-}
-.button {
-  text-align: center;
-  margin-top: 1rem;
-  padding: 15px;
-  background: #d68c45;
-  color: #000000;
-  font-family: "printable4uregular";
-  border-radius: 10px;
-  font-size: 1.25rem;
-}
-.form-label {
-  font-size: 1.5rem;
-  margin-top: 1rem !important;
-  margin-bottom: 0.5rem !important;
-}
-.Main {
-  text-align: center;
-  min-height: 100vh;
+
+.main {
+  text-align: center !important;
+  /* background-color: #282c34; */
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(25px + 2vmin);
   color: white;
+}
+
+.form-label {
+  font-size: 1.5rem !important;
+  font-weight: normal !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+  font-family: "printable4uregular" !important;
+}
+
+.form-input {
+  text-align: center !important;
+  padding: 10px !important;
+  font-family: "printable4uregular" !important;
+  width: 80vw !important;
+  font-size: 1.25rem !important;
+}
+
+.form-btn {
+  margin-top: 1rem !important;
+  padding: 15px !important;
+  background-color: #d68c45 !important;
+  color: #000000 !important;
+  font-family: "printable4uregular" !important;
+  font-weight: normal !important;
+  font-size: 1.25rem !important;
+}
+
+.prompt {
+  font-family: "prompt" !important;
 }
