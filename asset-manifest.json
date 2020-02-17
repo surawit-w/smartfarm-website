@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/smartfarm-website/static/css/main.2b891a7c.chunk.css",
-    "main.js": "/smartfarm-website/static/js/main.9019310f.chunk.js",
-    "main.js.map": "/smartfarm-website/static/js/main.9019310f.chunk.js.map",
+    "main.js": "/smartfarm-website/static/js/main.b450120f.chunk.js",
+    "main.js.map": "/smartfarm-website/static/js/main.b450120f.chunk.js.map",
     "runtime-main.js": "/smartfarm-website/static/js/runtime-main.e5dbc283.js",
     "runtime-main.js.map": "/smartfarm-website/static/js/runtime-main.e5dbc283.js.map",
-    "static/js/2.e8c1187e.chunk.js": "/smartfarm-website/static/js/2.e8c1187e.chunk.js",
-    "static/js/2.e8c1187e.chunk.js.map": "/smartfarm-website/static/js/2.e8c1187e.chunk.js.map",
+    "static/js/2.424c0472.chunk.js": "/smartfarm-website/static/js/2.424c0472.chunk.js",
+    "static/js/2.424c0472.chunk.js.map": "/smartfarm-website/static/js/2.424c0472.chunk.js.map",
     "index.html": "/smartfarm-website/index.html",
-    "precache-manifest.59e1d12044a5f7d107806df6c72a901e.js": "/smartfarm-website/precache-manifest.59e1d12044a5f7d107806df6c72a901e.js",
+    "precache-manifest.bc4e5f7ded4212b17574954ff05927ba.js": "/smartfarm-website/precache-manifest.bc4e5f7ded4212b17574954ff05927ba.js",
     "service-worker.js": "/smartfarm-website/service-worker.js",
     "static/css/main.2b891a7c.chunk.css.map": "/smartfarm-website/static/css/main.2b891a7c.chunk.css.map",
-    "static/js/2.e8c1187e.chunk.js.LICENSE": "/smartfarm-website/static/js/2.e8c1187e.chunk.js.LICENSE",
+    "static/js/2.424c0472.chunk.js.LICENSE": "/smartfarm-website/static/js/2.424c0472.chunk.js.LICENSE",
     "static/media/App.css": "/smartfarm-website/static/media/bg.cdb9e066.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.e5dbc283.js",
-    "static/js/2.e8c1187e.chunk.js",
+    "static/js/2.424c0472.chunk.js",
     "static/css/main.2b891a7c.chunk.css",
-    "static/js/main.9019310f.chunk.js"
+    "static/js/main.b450120f.chunk.js"
   ]
 }
