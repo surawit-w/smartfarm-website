@@ -25,7 +25,9 @@ export default class register extends Component {
       tel: "",
       loading: false,
       loader: false,
-      verify: false
+      verify: false,
+      registered: false,
+      duplicated: false
     };
     this.initialize = this.initialize.bind(this);
   }
@@ -33,10 +35,10 @@ export default class register extends Component {
   componentDidMount() {
     document.title = "Register";
     setTimeout(() => {
-      this.setState ({ loader: true });
+      this.setState({ loader: true });
       this.initialize();
       // this.verify(); //use this function if test
-    }, 1000);
+    }, 500);
   }
 
   initialize() {
@@ -69,7 +71,7 @@ export default class register extends Component {
       .then(res => {
         // console.log(res);
         console.log("New UID Detected!");
-        this.setState({ loader: false});
+        this.setState({ loader: false });
         setTimeout(() => {
           this.setState({ verify: true });
         }, 1500);
@@ -95,6 +97,8 @@ export default class register extends Component {
       .then(res => {
         console.log(res);
         console.log("Register Success!");
+        
+        this.setState({ registered: true })
 
         // delay before close liff
         setTimeout(() => {
@@ -104,7 +108,10 @@ export default class register extends Component {
       .catch(err => {
         console.log(err);
         console.log("Register Failed!");
-        this.setState({ loading: false });
+        this.setState({ loading: true, registered: true, deplicated: true })
+        setTimeout(() => {
+          this.setState({ loading: false, registered: false, duplicated: false });
+        }, 2500);
       });
   };
 
@@ -116,88 +123,109 @@ export default class register extends Component {
   render() {
     return (
       <div>
-        {this.state.verify ? (
-          // register form
-          <div id="register-form" className="main">
-            <Transition
-              visible={this.state.verify}
-              animation="fade up"
-              duration={1000}
-            >
-              <Form onSubmit={this.register}>
-                <Header as="h1" icon className="prompt">
-                  <Icon name="pencil alternate" />
-                  ลงทะเบียนผู้ใช้ใหม่
-                  <Header.Subheader className="subheader">
-                    {this.state.loading
-                      ? "กรุณารอสักครู่ กำลังประมวลผลค่ะ"
-                      : "โปรดกรอกข้อมูลก่อนเริ่มใช้งานด้วยค่ะ"}
-                  </Header.Subheader>
-                </Header>
-                <Form.Field required>
-                  <label className="form-label">ชื่อเกษตรกร</label>
-                  <input
-                    required
-                    className="form-input"
-                    placeholder="กรอกชื่อที่นี่"
-                    type="text"
-                    name="name"
-                    value={this.state.name}
-                    disabled={this.state.loading}
-                    onChange={this.changeHandler}
-                  />
-                </Form.Field>
-                <Form.Field required>
-                  <label className="form-label">เบอร์โทรศัพท์</label>
-                  <input
-                    required
-                    className="form-input"
-                    placeholder="กรอกเบอร์โทรศัพท์ที่นี่"
-                    maxLength="10"
-                    type="tel"
-                    name="tel"
-                    value={this.state.tel}
-                    disabled={this.state.loading}
-                    onChange={this.changeHandler}
-                  />
-                </Form.Field>
-                <Button
-                  color="orange"
-                  content="ลงทะเบียน"
-                  className="form-btn"
-                  type="submit"
-                  disabled={this.state.loading}
-                  loading={this.state.loading}
-                />
-              </Form>
-            </Transition>
-          </div>
-        ) : (
-          // Loader when entering register pages.
-          <div id="loader" className="main">
-            <Transition
-              visible={this.state.loader}
-              animation="fade up"
-              duration={1000}
-            >
-              <div>
-                <Loader size="massive" active indeterminate inverted>
-                  <Header as="h2" className="prompt">
-                    <br/>
-                    กำลังโหลดข้อมูล...
+        <div>
+          {this.state.verify ? (
+            // register form
+            <div id="register-form" className="main">
+              <Transition
+                visible={this.state.verify}
+                animation="fade up"
+                duration={1000}
+              >
+                <Form onSubmit={this.register}>
+                  <Header as="h1" icon className="prompt">
+                    <Icon name="pencil alternate" />
+                    ลงทะเบียนผู้ใช้ใหม่
                     <Header.Subheader className="subheader">
-                      กรุณารอสักครู่ค่ะ
+                      {this.state.loading
+                        ? "กรุณารอสักครู่ กำลังประมวลผลค่ะ"
+                        : "โปรดกรอกข้อมูลก่อนเริ่มใช้งานด้วยค่ะ"}
+                    </Header.Subheader>
+                  </Header>
+                  <Form.Field required>
+                    <label className="form-label">ชื่อเกษตรกร</label>
+                    <input
+                      required
+                      className="form-input"
+                      placeholder="กรอกชื่อที่นี่"
+                      type="text"
+                      name="name"
+                      value={this.state.name}
+                      disabled={this.state.loading}
+                      onChange={this.changeHandler}
+                    />
+                  </Form.Field>
+                  <Form.Field required>
+                    <label className="form-label">เบอร์โทรศัพท์</label>
+                    <input
+                      required
+                      className="form-input"
+                      placeholder="กรอกเบอร์โทรศัพท์ที่นี่"
+                      maxLength="10"
+                      type="tel"
+                      name="tel"
+                      value={this.state.tel}
+                      disabled={this.state.loading}
+                      onChange={this.changeHandler}
+                    />
+                  </Form.Field>
+                  <Button
+                    color="orange"
+                    content="ลงทะเบียน"
+                    className="form-btn"
+                    type="submit"
+                    disabled={this.state.loading}
+                    loading={this.state.loading}
+                  />
+                </Form>
+              </Transition>
+              <div>
+                <Dimmer
+                  active={this.state.registered}
+                  onClickOutside={this.handleClose}
+                  page
+                >
+                  <Header as="h2" icon inverted className="prompt">
+                    <Icon name={this.state.duplicated ? "times" : "check"} />
+                    {this.state.duplicated ? "ลงทะเบียนล้มเหลว!" : "ลงทะเบียนสำเร็จ!"}
+                    <Header.Subheader className="subheader">
+                    {this.state.duplicated ? "โปรดลองใหม่อีกครั้งค่ะ" : "กำลังออกจากหน้าต่างลงทะเบียนค่ะ"}
                       <span role="img" aria-label="please">
                         {" "}
-                        🥺
+                        🚀
                       </span>
                     </Header.Subheader>
                   </Header>
-                </Loader>
+                </Dimmer>
               </div>
-            </Transition>
-          </div>
-        )}
+            </div>
+          ) : (
+            // Loader when entering register pages.
+            <div id="loader" className="main">
+              <Transition
+                visible={this.state.loader}
+                animation="fade up"
+                duration={1000}
+              >
+                <div>
+                  <Loader size="massive" active indeterminate inverted>
+                    <Header as="h2" className="prompt">
+                      <br />
+                      กำลังโหลด...
+                      <Header.Subheader className="subheader">
+                        กรุณารอสักครู่ค่ะ
+                        <span role="img" aria-label="please">
+                          {" "}
+                          🥺
+                        </span>
+                      </Header.Subheader>
+                    </Header>
+                  </Loader>
+                </div>
+              </Transition>
+            </div>
+          )}
+        </div>
       </div>
     );
   }
