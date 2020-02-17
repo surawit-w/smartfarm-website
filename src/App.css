@@ -9,7 +9,7 @@ body {
 .main {
   text-align: center !important;
   /* background-color: #282c34; */
-  min-height: 95vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -53,8 +53,4 @@ body {
 
 .subheader {
   margin-top: 0.5rem !important;
-}
-
-.uid {
-  font-size: 0.5rem;
 }
