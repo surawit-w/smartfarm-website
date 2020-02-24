@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/smartfarm-website/precache-manifest.392215a7a51e68eac4cdf877e13a8ff4.js"
+  "/smartfarm-website/precache-manifest.45a896d76de65bc6b3d8cfba59a0c163.js"
 );
 
 self.addEventListener('message', (event) => {
