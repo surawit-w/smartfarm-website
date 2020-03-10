@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c9e9347dc69a38c779d5e8846ec96360",
+    "revision": "957724d6d329eeefba9e1cc2a2424fd6",
     "url": "/smartfarm-website/index.html"
   },
   {
-    "revision": "6f0283d8768750b869d5",
+    "revision": "b0f418c4f5d970c5c1f2",
     "url": "/smartfarm-website/static/css/main.7e1ac0d6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartfarm-website/static/js/2.12ecf2c9.chunk.js.LICENSE"
   },
   {
-    "revision": "6f0283d8768750b869d5",
-    "url": "/smartfarm-website/static/js/main.8600edc2.chunk.js"
+    "revision": "b0f418c4f5d970c5c1f2",
+    "url": "/smartfarm-website/static/js/main.a6378df7.chunk.js"
   },
   {
     "revision": "b4d21ccea2dc41c232f5",
