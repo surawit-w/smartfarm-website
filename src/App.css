@@ -14,9 +14,9 @@ body {
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
-  font-size: calc(25px + 2vmin);
+  /* font-size: calc(25px + 2vmin); */
   font-family: "prompt" !important;
-  color: white;
+  color: black;
 }
 
 .form-label {
@@ -53,4 +53,9 @@ body {
 
 .subheader {
   margin-top: 0.5rem !important;
+}
+
+.report-table {
+  width: 90%;
+  margin: auto;
 }

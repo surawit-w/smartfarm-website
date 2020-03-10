@@ -13,6 +13,7 @@ import {
 
 const liff = window.liff;
 const API = "https://line-smartfarm-api.herokuapp.com";
+// const API = "http://localhost:4000";
 
 export default class register extends Component {
   // I should try redux...
@@ -30,15 +31,6 @@ export default class register extends Component {
       duplicated: false
     };
     this.initialize = this.initialize.bind(this);
-  }
-
-  componentDidMount() {
-    document.title = "Register";
-    setTimeout(() => {
-      this.setState({ loader: true });
-      this.initialize();
-      // this.verify(); //use this function if test
-    }, 500);
   }
 
   initialize() {
@@ -61,9 +53,19 @@ export default class register extends Component {
     });
   }
 
+  componentDidMount() {
+    document.title = "Register";
+    setTimeout(() => {
+      // this.verify(); //use this function if testing.
+      this.initialize();
+      this.setState({ loader: true });
+    }, 500);
+  }
+
   // check for duplicated UID
   verify() {
     console.log("Checking for duplicated...");
+    console.log("UID: " + this.state.uid);
     axios
       .post(API + "/verify", {
         uid: this.state.uid
@@ -97,8 +99,8 @@ export default class register extends Component {
       .then(res => {
         console.log(res);
         console.log("Register Success!");
-        
-        this.setState({ registered: true })
+
+        this.setState({ registered: true });
 
         // delay before close liff
         setTimeout(() => {
@@ -108,9 +110,17 @@ export default class register extends Component {
       .catch(err => {
         console.log(err);
         console.log("Register Failed!");
-        this.setState({ loading: true, registered: true, deplicated: true })
+        this.setState({
+          loading: true,
+          registered: true,
+          duplicated: true
+        });
         setTimeout(() => {
-          this.setState({ loading: false, registered: false, duplicated: false });
+          this.setState({
+            loading: false,
+            registered: false,
+            duplicated: false
+          });
         }, 2500);
       });
   };
@@ -187,9 +197,13 @@ export default class register extends Component {
                 >
                   <Header as="h2" icon inverted className="prompt">
                     <Icon name={this.state.duplicated ? "times" : "check"} />
-                    {this.state.duplicated ? "ลงทะเบียนล้มเหลว!" : "ลงทะเบียนสำเร็จ!"}
+                    {this.state.duplicated
+                      ? "ลงทะเบียนล้มเหลว!"
+                      : "ลงทะเบียนสำเร็จ!"}
                     <Header.Subheader className="subheader">
-                    {this.state.duplicated ? "โปรดลองใหม่อีกครั้งค่ะ" : "กำลังออกจากหน้าต่างลงทะเบียนค่ะ"}
+                      {this.state.duplicated
+                        ? "โปรดลองใหม่อีกครั้งค่ะ"
+                        : "กำลังออกจากหน้าต่างลงทะเบียนค่ะ"}
                       <span role="img" aria-label="please">
                         {" "}
                         🚀
